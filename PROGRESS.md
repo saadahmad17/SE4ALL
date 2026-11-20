@@ -5,15 +5,20 @@
 **Deadline:** 20 Nov 2026 (extended from the original 13 Nov — confirmed on se4all.github.io)
 **Paper type:** Short/position paper (max 5 pages incl. references, IEEE IEEEtran 10pt, single-blind review)
 
-## Status: pipeline and paper draft are complete
+## Status: pipeline, human review, and paper draft are ALL complete (100/100)
 
-Everything through a full paper draft is done. **The only remaining step is for a human
-to fill in author/affiliation details and do a final compile + page-count check** —
+Every one of the 100 sampled figures now has a human-verified reference description —
+the last one (`2607.09054` fig 6, reviewed by Saad directly) landed, and every
+downstream number (judge scores, results tables, charts, error-type analysis) has been
+refreshed to reflect the complete set. **The only remaining step is for a human to fill
+in author/affiliation details and do a final compile + page-count check** —
 `paper/paper.tex` is ready (3 figures, 1 table, 8 sections) but not yet actually
 compiled (no LaTeX on the build machine, and a word-count-based page estimate turned
 out unreliable, so no page-count number here should be trusted). Upload to Overleaf or
 compile locally, add author info, verify it's within the 5-page limit, and it's
 submission-ready.
+
+**The repo is live on GitHub**: https://github.com/saadahmad17/SE4ALL (public).
 
 ## What the study does
 
@@ -28,19 +33,19 @@ our descriptions + code — never the raw images).
 ## Headline result
 
 **Hallucination is pervasive, across every model, including the closed baseline** —
-54.2% to 86.6% of generated descriptions contained at least one unsupported or
+54.6% to 85.7% of generated descriptions contained at least one unsupported or
 contradicted claim. Two findings worth highlighting in review/talks:
 
-1. **The closed baseline is not the safest model.** GPT-4o hallucinated 60.2% of the
-   time — worse than an open-weight model, Llama-4-Scout, at 54.2%. "Open" is not
+1. **The closed baseline is not the safest model.** GPT-4o hallucinated 59.6% of the
+   time — worse than an open-weight model, Llama-4-Scout, at 54.6%. "Open" is not
    inherently riskier here.
 2. **Bigger isn't better.** Gemma-3-27B, the largest open model evaluated, was also the
-   *worst* performer on every single criterion (86.6% hallucination rate).
+   *worst* performer on every single criterion (85.7% hallucination rate).
 3. **Charts are harder than diagrams** for 4 of 5 models — consistent with charts
    demanding precise numeric/trend reading vs. diagrams' more forgiving structural
    tracing.
 
-## Why do some models hallucinate more? (added after classifying all 327 hallucinations)
+## Why do some models hallucinate more? (added after classifying all 328 hallucinations)
 
 - **Misidentification** (wrong label/identity of a visible element — an icon, legend
   entry, axis label) is every model's single largest error category, 41-56% of its
@@ -52,7 +57,7 @@ contradicted claim. Two findings worth highlighting in review/talks:
   that aren't there, not just "worse at everything."
 - **Llama-4-Scout's edge looks like calibration**: lowest fabricated-detail rate (8%) and
   the shortest descriptions (93 words avg., vs. 112-114 for three of the other four) —
-  weakly but consistently correlated with hallucination rate across all 487 scored
+  weakly but consistently correlated with hallucination rate across all 492 scored
   examples (Pearson r=0.17). Saying less may mean fewer chances to be wrong.
 - **Trend/direction-reversal errors (17-29%) are the most model-agnostic category** —
   every model confuses "up" and "down" at similar rates, which is the strongest argument
@@ -60,11 +65,11 @@ contradicted claim. Two findings worth highlighting in review/talks:
 
 | Model | Accuracy | Completeness | Message | Conciseness | Hallucination % |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B | 3.0 | 2.6 | 3.0 | 4.1 | 72.2 |
-| Llama-4-Scout | 2.6 | 2.1 | 2.2 | 3.8 | **54.2 (best)** |
-| Gemma-3-27B | 2.5 | 2.3 | 2.6 | 3.8 | 86.6 (worst) |
-| Mistral-Small-3.2-24B | 2.9 | 2.4 | 2.8 | 4.0 | 62.6 |
-| GPT-4o (closed) | 3.1 | 2.5 | 2.8 | 4.2 | 60.2 |
+| Qwen3-VL-8B | 3.0 | 2.6 | 3.0 | 4.1 | 71.4 |
+| Llama-4-Scout | 2.6 | 2.1 | 2.2 | 3.8 | **54.6 (best)** |
+| Gemma-3-27B | 2.5 | 2.3 | 2.6 | 3.8 | 85.7 (worst) |
+| Mistral-Small-3.2-24B | 2.9 | 2.4 | 2.8 | 4.0 | 62.0 |
+| GPT-4o (closed) | 3.1 | 2.5 | 2.8 | 4.2 | 59.6 |
 
 All scores 1-5 scale (higher = better); hallucination % is the % of descriptions with
 at least one hallucinated claim (lower = better). Full numbers: `data/results_overall.json`,
@@ -81,8 +86,8 @@ at least one hallucinated claim (lower = better). Full numbers: `data/results_ov
 | 3. Figure-type tagged | chart / diagram / mixed / other | 132 / 82 / 17 / 121 |
 | 4. Evaluation sample | Stratified sample of the 352 pool | 100 (38/23/5/34) |
 | 5a. Model descriptions generated | 100 figures × 5 models, image-only prompt | 500 (0 errors) |
-| 5b. Human-verified references | Google Form review + LLM-assisted resolution for flagged ones | 99/100 (1 never reviewed, excluded) |
-| 5c. Judge scores | `data/generations.jsonl` × `data/reference_descriptions.jsonl` | 487/495 (8 dropped, persistent parse failures) |
+| 5b. Human-verified references | Google Form review + direct review (last one) + LLM-assisted resolution for flagged ones | **100/100, complete** |
+| 5c. Judge scores | `data/generations.jsonl` × `data/reference_descriptions.jsonl` | 492/500 (8 dropped, persistent parse failures) |
 
 Scaling to the full 352-figure pool (and beyond, as a fine-tuning dataset) was
 deliberately deferred — explicit future work mentioned in the paper's Discussion
@@ -105,17 +110,18 @@ being open and self-hostable, not that this study literally ran them on a laptop
 
 ## Reference description quality control
 
-99 human-verified references were built via: an LLM (Claude Sonnet) drafted each one
-from the image + the paper's own caption/mentions; 14 human annotators then reviewed
-every draft against the actual figure via a Google Form. Of those reviews: 62 figures
-were confirmed accurate as-drafted; 37 had at least one reviewer flag an issue (ranging
-from genuine visual errors like a miscounted node or wrong arrow direction, to a
-figure-type mislabel, to cases where the critique wanted non-visual analytical content
-the image doesn't actually show). Each flagged figure was re-examined — image +
-specific critique together — to separate real errors (corrected) from the
-analytical-content case (kept as originally drafted, since describing only what's
-visible is correct behavior for this task). One figure (`2607.09054` fig 6) was never
-reviewed by anyone and is excluded from the final 99.
+All 100 human-verified references were built via: an LLM (Claude Sonnet) drafted each
+one from the image + the paper's own caption/mentions; 14 human annotators then
+reviewed every draft against the actual figure (99 via a Google Form, the last one —
+`2607.09054` fig 6 — reviewed directly by Saad). Of those reviews: 62 figures were
+confirmed accurate as-drafted; 38 had at least one reviewer flag an issue (ranging from
+genuine visual errors like a miscounted node or wrong arrow direction, to a figure-type
+mislabel, to cases where the critique wanted non-visual analytical content the image
+doesn't actually show, like the final figure's request for "how long this bug existed"
+— not something a code-diff screenshot without timestamps can show). Each flagged
+figure was re-examined — image + specific critique together — to separate real errors
+(corrected) from the analytical-content case (kept as originally drafted, since
+describing only what's visible is correct behavior for this task).
 
 ## Deliverables
 

@@ -325,3 +325,4 @@
 {"arxiv_id": "2601.03621", "fig_index": 8, "model": "mistralai/mistral-small-3.2-24b-instruct", "category": "trend_direction", "error": null}
 {"arxiv_id": "2511.03153", "fig_index": 8, "model": "qwen/qwen3-vl-8b-instruct", "category": "trend_direction", "error": null}
 {"arxiv_id": "2511.03153", "fig_index": 5, "model": "meta-llama/llama-4-scout", "category": "ranking_comparison", "error": null}
+{"arxiv_id": "2607.09054", "fig_index": 6, "model": "meta-llama/llama-4-scout", "category": "other", "error": null}

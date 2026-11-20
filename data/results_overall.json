@@ -1,42 +1,42 @@
 {
   "qwen/qwen3-vl-8b-instruct": {
-    "n": 97,
-    "accuracy": 2.99,
+    "n": 98,
+    "accuracy": 3,
     "completeness": 2.64,
-    "message": 2.95,
-    "conciseness": 4.13,
-    "hallucination_rate": 72.2
+    "message": 2.96,
+    "conciseness": 4.14,
+    "hallucination_rate": 71.4
   },
   "meta-llama/llama-4-scout": {
-    "n": 96,
-    "accuracy": 2.6,
+    "n": 97,
+    "accuracy": 2.61,
     "completeness": 2.08,
     "message": 2.2,
     "conciseness": 3.77,
-    "hallucination_rate": 54.2
+    "hallucination_rate": 54.6
   },
   "google/gemma-3-27b-it": {
-    "n": 97,
-    "accuracy": 2.48,
-    "completeness": 2.3,
-    "message": 2.55,
-    "conciseness": 3.81,
-    "hallucination_rate": 86.6
+    "n": 98,
+    "accuracy": 2.5,
+    "completeness": 2.31,
+    "message": 2.56,
+    "conciseness": 3.83,
+    "hallucination_rate": 85.7
   },
   "mistralai/mistral-small-3.2-24b-instruct": {
-    "n": 99,
-    "accuracy": 2.87,
-    "completeness": 2.37,
-    "message": 2.83,
-    "conciseness": 4.03,
-    "hallucination_rate": 62.6
+    "n": 100,
+    "accuracy": 2.88,
+    "completeness": 2.38,
+    "message": 2.84,
+    "conciseness": 4.04,
+    "hallucination_rate": 62.0
   },
   "openai/gpt-4o": {
-    "n": 98,
-    "accuracy": 3.05,
+    "n": 99,
+    "accuracy": 3.06,
     "completeness": 2.45,
-    "message": 2.83,
-    "conciseness": 4.21,
-    "hallucination_rate": 60.2
+    "message": 2.84,
+    "conciseness": 4.22,
+    "hallucination_rate": 59.6
   }
 }

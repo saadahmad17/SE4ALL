@@ -20,20 +20,37 @@ superseded-v1 script and data files (assemble_references v1, flagged_input v1,
 resolved_flagged v1) — the "v2" scripts were renamed to drop the suffix since they are
 now simply the only version.
 
-The full pipeline ran end-to-end: dataset → 500 model generations → 99 human-verified
-references → 487 judge scores → charts → full paper draft, **plus a deeper "why do some
-models hallucinate more" analysis added 2026-11-20**: all 327 hallucinated claims were
-classified into 6 error types (misidentification, trend/direction reversal, miscount,
-fabricated detail, ranking/comparison, numeric magnitude) via `scripts/categorize_errors.py`
-→ `data/error_categories.jsonl` / `data/error_category_breakdown.json`. Real findings, not
-speculation: misidentification dominates for every model (41-56% of its hallucinations);
-Gemma-3-27B (worst overall) has both the highest misidentification share (56%) and
-highest fabricated-detail share (11%) — concentrated weakness, not uniform badness;
-Llama-4-Scout (best overall) also has the lowest fabricated-detail rate (8%) and writes
-the shortest descriptions, consistent with a weak-but-real length/hallucination
-correlation (Pearson r=0.17, n=487). This is now Fig.~\ref{fig:erroranalysis} panel (b)
-in the paper, merged into one combined figure with the figure-type heatmap (panel a) to
-save a float's worth of space against the 5-page limit — 3 figures total now, not 4.
+The full pipeline ran end-to-end: dataset → 500 model generations → **100/100
+human-verified references (full coverage, no gaps)** → 492 judge scores → charts →
+full paper draft, plus a deeper "why do some models hallucinate more" analysis: all 328
+hallucinated claims classified into 6 error types (misidentification, trend/direction
+reversal, miscount, fabricated detail, ranking/comparison, numeric magnitude) via
+`scripts/categorize_errors.py` → `data/error_categories.jsonl` /
+`data/error_category_breakdown.json`. Real findings, not speculation: misidentification
+dominates for every model (41-56% of its hallucinations); Gemma-3-27B (worst overall)
+has both the highest misidentification share (56%) and highest fabricated-detail share
+(11%) — concentrated weakness, not uniform badness; Llama-4-Scout (best overall) also
+has the lowest fabricated-detail rate (8%) and writes the shortest descriptions,
+consistent with a weak-but-real length/hallucination correlation (Pearson r=0.17,
+n=492). This is Fig.~\ref{fig:erroranalysis} panel (b) in the paper, merged into one
+combined figure with the figure-type heatmap (panel a) to save a float's worth of space
+against the 5-page limit — 3 figures total, not 4.
+
+**The 100th figure** (`2607.09054` fig 6, previously unreviewed) was reviewed by the
+user directly (not via the Google Form) and run through the same `resolve_flagged.py`
+pipeline as everything else for consistency — verdict `narrative-bias` (the critique's
+"outdated annotation persisted 2 years" point isn't verifiable from the image, which
+has no timestamps; verified this directly by viewing the image). All downstream
+numbers (results tables, charts, error taxonomy) were refreshed afterward — the shifts
+were all ≤1 percentage point, no qualitative conclusion changed.
+
+**Repo is now on GitHub**: `https://github.com/saadahmad17/SE4ALL` (public). Pushed via
+a personal access token (the user pasted a real token into chat at one point — flagged
+it as exposed, had them revoke/regenerate; **never echo a real token's full value back
+in any tool output or message, even for verification** — check length/prefix only, as
+done throughout this session). `data/figures/*/` (raw images) is gitignored per the
+project's own release-by-reference policy; `.claude/` is also gitignored (tool-internal
+state, not project content).
 
 **Only remaining step is human: fill in author/affiliation details in `paper/paper.tex`
 and do a final compile + page-count check before submitting** (no LaTeX installed on
@@ -48,13 +65,13 @@ this later, extension dates can themselves move.
 
 **Final numbers** (full detail in the dated STATUS entries below): 195/322 ICSE titles
 matched on arXiv → 639 figures extracted from 70 papers → 352 "good" pool → 100-figure
-stratified eval sample → 500 model generations (5 models × 100 figures, 0 errors) → 99
-human-verified reference descriptions (62 confirmed as-is, 37 corrected/verified via an
-LLM-assisted resolution pass, 1 figure never reviewed and excluded) → 487/495 judge
-scores (8 dropped after persistent parse failures). Headline result: hallucination rate
-54.2%–86.6% across all 5 models including the closed baseline; an open-weight model
+stratified eval sample → 500 model generations (5 models × 100 figures, 0 errors) →
+**100/100 human-verified reference descriptions** (62 confirmed as-is, 38
+corrected/verified via an LLM-assisted resolution pass) → 492/500 judge scores (8
+dropped after persistent parse failures). Headline result: hallucination rate
+54.6%–85.7% across all 5 models including the closed baseline; an open-weight model
 (Llama-4-Scout) beat GPT-4o on hallucination rate; charts were harder than diagrams for
-4/5 models. Full numbers in `results_overall.json`, `results_by_type.json`.
+4/5 models. Full numbers in `data/results_overall.json`, `data/results_by_type.json`.
 
 **Deliverables:**
 - `paper/paper.tex` — full draft, Abstract through Conclusion, needs author info + compile check
