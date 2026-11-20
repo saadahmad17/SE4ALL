@@ -13,3 +13,6 @@ data/figures/*/
 !data/figures/sample.jsonl
 !data/figures/index.jsonl
 !data/figures/index_typed.jsonl
+
+# Claude Code's own local state, not project content
+.claude/
