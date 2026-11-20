@@ -1,0 +1,502 @@
+[
+  {
+    "position": 1,
+    "arxiv_id": "2601.09440",
+    "fig_index": 2
+  },
+  {
+    "position": 2,
+    "arxiv_id": "2510.15079",
+    "fig_index": 8
+  },
+  {
+    "position": 3,
+    "arxiv_id": "2507.08523",
+    "fig_index": 6
+  },
+  {
+    "position": 4,
+    "arxiv_id": "2601.13894",
+    "fig_index": 3
+  },
+  {
+    "position": 5,
+    "arxiv_id": "2604.13997",
+    "fig_index": 6
+  },
+  {
+    "position": 6,
+    "arxiv_id": "2507.08523",
+    "fig_index": 2
+  },
+  {
+    "position": 7,
+    "arxiv_id": "2511.03153",
+    "fig_index": 11
+  },
+  {
+    "position": 8,
+    "arxiv_id": "2508.15423",
+    "fig_index": 1
+  },
+  {
+    "position": 9,
+    "arxiv_id": "2601.02066",
+    "fig_index": 3
+  },
+  {
+    "position": 10,
+    "arxiv_id": "2507.08523",
+    "fig_index": 12
+  },
+  {
+    "position": 11,
+    "arxiv_id": "2601.09440",
+    "fig_index": 1
+  },
+  {
+    "position": 12,
+    "arxiv_id": "2601.03621",
+    "fig_index": 15
+  },
+  {
+    "position": 13,
+    "arxiv_id": "2608.03286",
+    "fig_index": 2
+  },
+  {
+    "position": 14,
+    "arxiv_id": "2608.21718",
+    "fig_index": 1
+  },
+  {
+    "position": 15,
+    "arxiv_id": "2602.19446",
+    "fig_index": 12
+  },
+  {
+    "position": 16,
+    "arxiv_id": "2603.04245",
+    "fig_index": 2
+  },
+  {
+    "position": 17,
+    "arxiv_id": "2608.18900",
+    "fig_index": 6
+  },
+  {
+    "position": 18,
+    "arxiv_id": "2603.04245",
+    "fig_index": 0
+  },
+  {
+    "position": 19,
+    "arxiv_id": "2511.03153",
+    "fig_index": 8
+  },
+  {
+    "position": 20,
+    "arxiv_id": "2608.03286",
+    "fig_index": 0
+  },
+  {
+    "position": 21,
+    "arxiv_id": "2601.03621",
+    "fig_index": 17
+  },
+  {
+    "position": 22,
+    "arxiv_id": "2602.04296",
+    "fig_index": 1
+  },
+  {
+    "position": 23,
+    "arxiv_id": "2601.08045",
+    "fig_index": 13
+  },
+  {
+    "position": 24,
+    "arxiv_id": "2604.26094",
+    "fig_index": 8
+  },
+  {
+    "position": 25,
+    "arxiv_id": "2603.20618",
+    "fig_index": 2
+  },
+  {
+    "position": 26,
+    "arxiv_id": "2608.21718",
+    "fig_index": 3
+  },
+  {
+    "position": 27,
+    "arxiv_id": "2601.05579",
+    "fig_index": 4
+  },
+  {
+    "position": 28,
+    "arxiv_id": "2602.22764",
+    "fig_index": 0
+  },
+  {
+    "position": 29,
+    "arxiv_id": "2601.08036",
+    "fig_index": 2
+  },
+  {
+    "position": 30,
+    "arxiv_id": "2601.08729",
+    "fig_index": 0
+  },
+  {
+    "position": 31,
+    "arxiv_id": "2607.22161",
+    "fig_index": 3
+  },
+  {
+    "position": 32,
+    "arxiv_id": "2601.03621",
+    "fig_index": 0
+  },
+  {
+    "position": 33,
+    "arxiv_id": "2602.08750",
+    "fig_index": 5
+  },
+  {
+    "position": 34,
+    "arxiv_id": "2509.13755",
+    "fig_index": 5
+  },
+  {
+    "position": 35,
+    "arxiv_id": "2601.02632",
+    "fig_index": 9
+  },
+  {
+    "position": 36,
+    "arxiv_id": "2608.21718",
+    "fig_index": 12
+  },
+  {
+    "position": 37,
+    "arxiv_id": "2507.14791",
+    "fig_index": 2
+  },
+  {
+    "position": 38,
+    "arxiv_id": "2604.13693",
+    "fig_index": 4
+  },
+  {
+    "position": 39,
+    "arxiv_id": "2607.22161",
+    "fig_index": 4
+  },
+  {
+    "position": 40,
+    "arxiv_id": "2607.09054",
+    "fig_index": 2
+  },
+  {
+    "position": 41,
+    "arxiv_id": "2601.03430",
+    "fig_index": 0
+  },
+  {
+    "position": 42,
+    "arxiv_id": "2601.05449",
+    "fig_index": 4
+  },
+  {
+    "position": 43,
+    "arxiv_id": "2601.01042",
+    "fig_index": 1
+  },
+  {
+    "position": 44,
+    "arxiv_id": "2601.12385",
+    "fig_index": 1
+  },
+  {
+    "position": 45,
+    "arxiv_id": "2511.03153",
+    "fig_index": 5
+  },
+  {
+    "position": 46,
+    "arxiv_id": "2602.19446",
+    "fig_index": 2
+  },
+  {
+    "position": 47,
+    "arxiv_id": "2608.21718",
+    "fig_index": 0
+  },
+  {
+    "position": 48,
+    "arxiv_id": "2601.19088",
+    "fig_index": 0
+  },
+  {
+    "position": 49,
+    "arxiv_id": "2601.03621",
+    "fig_index": 18
+  },
+  {
+    "position": 50,
+    "arxiv_id": "2602.22764",
+    "fig_index": 11
+  },
+  {
+    "position": 51,
+    "arxiv_id": "2602.06875",
+    "fig_index": 2
+  },
+  {
+    "position": 52,
+    "arxiv_id": "2604.13693",
+    "fig_index": 5
+  },
+  {
+    "position": 53,
+    "arxiv_id": "2507.14791",
+    "fig_index": 1
+  },
+  {
+    "position": 54,
+    "arxiv_id": "2510.15079",
+    "fig_index": 7
+  },
+  {
+    "position": 55,
+    "arxiv_id": "2601.02632",
+    "fig_index": 4
+  },
+  {
+    "position": 56,
+    "arxiv_id": "2510.17130",
+    "fig_index": 1
+  },
+  {
+    "position": 57,
+    "arxiv_id": "2509.10099",
+    "fig_index": 6
+  },
+  {
+    "position": 58,
+    "arxiv_id": "2601.05449",
+    "fig_index": 9
+  },
+  {
+    "position": 59,
+    "arxiv_id": "2511.03153",
+    "fig_index": 1
+  },
+  {
+    "position": 60,
+    "arxiv_id": "2602.19446",
+    "fig_index": 1
+  },
+  {
+    "position": 61,
+    "arxiv_id": "2601.03621",
+    "fig_index": 12
+  },
+  {
+    "position": 62,
+    "arxiv_id": "2602.11911",
+    "fig_index": 1
+  },
+  {
+    "position": 63,
+    "arxiv_id": "2509.13755",
+    "fig_index": 6
+  },
+  {
+    "position": 64,
+    "arxiv_id": "2601.02632",
+    "fig_index": 6
+  },
+  {
+    "position": 65,
+    "arxiv_id": "2604.13693",
+    "fig_index": 6
+  },
+  {
+    "position": 66,
+    "arxiv_id": "2604.26094",
+    "fig_index": 0
+  },
+  {
+    "position": 67,
+    "arxiv_id": "2601.10942",
+    "fig_index": 3
+  },
+  {
+    "position": 68,
+    "arxiv_id": "2607.22161",
+    "fig_index": 2
+  },
+  {
+    "position": 69,
+    "arxiv_id": "2510.17130",
+    "fig_index": 3
+  },
+  {
+    "position": 70,
+    "arxiv_id": "2601.03430",
+    "fig_index": 1
+  },
+  {
+    "position": 71,
+    "arxiv_id": "2607.09054",
+    "fig_index": 6
+  },
+  {
+    "position": 72,
+    "arxiv_id": "2602.19446",
+    "fig_index": 6
+  },
+  {
+    "position": 73,
+    "arxiv_id": "2603.20618",
+    "fig_index": 7
+  },
+  {
+    "position": 74,
+    "arxiv_id": "2509.13755",
+    "fig_index": 0
+  },
+  {
+    "position": 75,
+    "arxiv_id": "2601.00627",
+    "fig_index": 5
+  },
+  {
+    "position": 76,
+    "arxiv_id": "2601.12262",
+    "fig_index": 7
+  },
+  {
+    "position": 77,
+    "arxiv_id": "2507.16407",
+    "fig_index": 1
+  },
+  {
+    "position": 78,
+    "arxiv_id": "2601.12385",
+    "fig_index": 5
+  },
+  {
+    "position": 79,
+    "arxiv_id": "2601.03621",
+    "fig_index": 6
+  },
+  {
+    "position": 80,
+    "arxiv_id": "2607.00562",
+    "fig_index": 2
+  },
+  {
+    "position": 81,
+    "arxiv_id": "2507.08523",
+    "fig_index": 11
+  },
+  {
+    "position": 82,
+    "arxiv_id": "2607.00562",
+    "fig_index": 5
+  },
+  {
+    "position": 83,
+    "arxiv_id": "2601.03621",
+    "fig_index": 8
+  },
+  {
+    "position": 84,
+    "arxiv_id": "2607.23774",
+    "fig_index": 0
+  },
+  {
+    "position": 85,
+    "arxiv_id": "2508.15423",
+    "fig_index": 0
+  },
+  {
+    "position": 86,
+    "arxiv_id": "2601.21695",
+    "fig_index": 3
+  },
+  {
+    "position": 87,
+    "arxiv_id": "2602.22764",
+    "fig_index": 1
+  },
+  {
+    "position": 88,
+    "arxiv_id": "2604.13997",
+    "fig_index": 4
+  },
+  {
+    "position": 89,
+    "arxiv_id": "2601.12262",
+    "fig_index": 4
+  },
+  {
+    "position": 90,
+    "arxiv_id": "2601.03621",
+    "fig_index": 7
+  },
+  {
+    "position": 91,
+    "arxiv_id": "2603.20618",
+    "fig_index": 5
+  },
+  {
+    "position": 92,
+    "arxiv_id": "2607.22161",
+    "fig_index": 5
+  },
+  {
+    "position": 93,
+    "arxiv_id": "2603.20618",
+    "fig_index": 0
+  },
+  {
+    "position": 94,
+    "arxiv_id": "2509.13755",
+    "fig_index": 4
+  },
+  {
+    "position": 95,
+    "arxiv_id": "2604.13693",
+    "fig_index": 0
+  },
+  {
+    "position": 96,
+    "arxiv_id": "2510.15079",
+    "fig_index": 4
+  },
+  {
+    "position": 97,
+    "arxiv_id": "2604.26094",
+    "fig_index": 7
+  },
+  {
+    "position": 98,
+    "arxiv_id": "2601.21593",
+    "fig_index": 0
+  },
+  {
+    "position": 99,
+    "arxiv_id": "2601.12385",
+    "fig_index": 3
+  },
+  {
+    "position": 100,
+    "arxiv_id": "2607.09054",
+    "fig_index": 1
+  }
+]

@@ -1,0 +1,322 @@
+Proceedings 2026 IEEE/ACM 48th International Conference on Software Engineering ICSE 2026 12-18 April 2026 Rio de Janeiro, Brazil ii The Association for Computing Machinery 1601 Broadway, 10th Floor New York New York 10019-7434 ACM COPYRIGHT NOTICE. Copyright © 2026 by the Association for Computing Machinery, Inc. Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, to republish, to post on servers, or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from Publications Dept., ACM, Inc., fax +1 (212) 869-0481, or permissions@acm.org. For other copying of articles that carry a code at the bottom of the first or last page, copying is permitted provided that the per-copy fee indicated in the code is paid through the Copyright Clearance Center, 222 Rosewood Drive, Danvers, MA 01923, +1-978-750-8400, +1-978-750-4470 (fax). Notice to Past Authors of ACM-Published Articles ACM intends to create a complete electronic archive of all articles and/or other material previously published by ACM. If you have written a work that was previously published by ACM in any journal or conference proceedings prior to 1978, or any SIG Newsletter at any time, and you do NOT want this work to appear in the ACM Digital Library, please inform permissions@acm.org, stating the title of the work, the author(s), and where and when published. ACM ISBN: 979-8-4007-2025-3 Editorial production by Lisa O’Conner Cover art production by Javier Gurrola IEEE Computer Society Conference Publishing Services (CPS) http://www.computer.org/cps iii Proceedings 2026 IEEE/ACM 48th International Conference on Software Engineering ICSE 2026 12-18 April 2026 Rio de Janeiro, Brazil iv 2026 IEEE/ACM 48th International Conference on Software Engineering (ICSE) ICSE 2026 Table of Contents Welcome Message......................................................................................................................................................xlix Message from the Program Chairs............................................................................................................................lii Organizing Committee..............................................................................................................................................lvii Program Committee.....................................................................................................................................................lxi AI for Software Engineering 1 Dually Hierarchical Drift Adaptation for Online Configuration Performance Learning
+PromiseTune: Unveiling Causally Promising and Explainable Configuration Tuning
+Quantifying Memorization Advantage in Code LLMs
+Portable Power Modeling with Transfer Learning on JVM-Based Applications
+Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning
+InferLog: Accelerating LLM Inference for Online Log Parsing via ICL-oriented Prefix Caching
+ConfLogger: Enhance Systems’ Configuration Diagnosability through Configuration Logging
+RefAgent: A Multi-agent LLM-based Framework for Automatic Software Refactoring
+Automatic Dockerfile Generation with Large Language Models
+What to Retrieve for Effective Retrieval-Augmented Code Generation? An Empirical Study and Beyond
+Knowledge-Augmented Log Anomaly Detection with Large Language Models
+Order Matters! An Empirical Study on Large Language Models’ Input Order Bias in Software Fault Localization
+Measuring the Influence of Incorrect Code on Test Generation
+Are “Solved Issues” in SWE-bench Really Solved Correctly? An Empirical Study
+From Code Changes to Quality Gains: An Empirical Study in Python ML Systems with PyQu
+Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models
+RealityCraft: Automated Synthesis of Extended Reality Device Interaction Scripts from Natural Language Instructions
+Enhancing LLM Code Generation with Ensembles: A Similarity-Based Selection Approach
+SEER: Enhancing Chain-of-Thought Code Generation through Self-Exploring Deep Reasoning
+HoarePrompt: Structural Reasoning About Program Correctness in Natural Language
+MaCTG: Multi-Agent Collaborative Thought Graph for Automatic Programming
+An LLM Agentic Approach for Legal-Critical Software: A Case Study for Tax Prep Software
+CREME: Robustness Enhancement of Code LLMs via Layer-Aware Model Editing
+When Prompts Go Wrong: Evaluating Code Model Robustness to Ambiguous, Contradictory, and Incomplete Task Descriptions
+SecureReviewer: Enhancing Large Language Models for Secure Code Review through Secure-Aware Fine-Tuning
+Argus: A Multi-Agent Sensitive Information Leakage Detection Framework Based on Hierarchical Reference Relationships
+Rethinking the Evaluation of Secure Code Generation
+Synthetic Repo-level Bug Dataset for Training Automated Program Repair Models
+Evaluating Generated Commit Messages with Large Language Models
+RepoScope: Leveraging Call Chain-Aware Multi-View Context for Repository-Level Code Generation
+ProxyWar: Dynamic Assessment of LLM Code Generation in Game Arenas
+From Seed to Scope: Reasoning to Identify Change Impact Sets
+Top General Performance = Top Domain Performance? DomainCodeBench: A Multi-domain Code Generation Benchmark
+Generating Energy-Efficient Code via Large-Language Models - Where are we now?
+EMC: A Semantic-Enhanced Malware Classification Method with Robustness and Scalability
+FlipFlop: A Static Analysis-based Energy Optimization Framework for GPU Kernels
+Panoptes: A Profile Clustering Framework for Context-Aware Binary Optimization
+ADARULE: LLM-Driven Natural Language to LTL Conversion via Pattern-Adaptive Rule Induction
+FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction
+An Empirical Study of Knowledge Distillation for Code Understanding Tasks
+SEAlign: Alignment Training for Software Engineering Agent
+AdapTrack: Constrained Decoding without Distorting LLM’s Output Intent
+Towards Scalable and Interpretable Mobile App Risk Analysis via Large Language Models
+How Do Semantically Equivalent Code Transformations Impact Membership Inference on LLMs for Code?
+Filtering before Tuning: Robust Fine-Tuning of Large Code Models under Noisy Labels
+Think Like Human Developers: Harnessing Community Knowledge for Structured Code Reasoning
+Hey, ChatGPT, Look at My Work: Using Conversational AI in Requirements Engineering Education
+An Eye for AI: Eye-Tracking the Micro-Interruptions of GenAI Code Suggestions
+What Makes Code Generation Ethically Sourced?
+EmbedAgent: Benchmarking Large Language Models in Embedded System Development
+Enabling Global, Human-Centered Explanations for LLMs: From Tokens to Interpretable Code and Test Generation
+LLM Test Generation via Iterative Hybrid Program Analysis
+Automating Just-In-Time Python Type Annotation Updating
+Large Language Model-Aided Partial Program Dependence Analysis
+Enhancing Issue Localization Agent with Tool-Interactive Training
+Cobblestone: A Divide-and-Conquer Approach for Automating Formal Verification
+Towards Better Linux Kernel Fault Localization: Leveraging Contrastive Reasoning and Hierarchical Context Analysis
+Write Your Own Code Checker: An Automated Test-Driven Checker Development Approach with LLMs
+HarnessLLM: Rust Verification Harness Generation with Large Language Models
+Issue2Test: Generating Reproducing Test Cases from Issue Reports
+Retrieval-Augmented Test Generation: How Far Are We?
+SAINT: Service-level Integration Test Generation with Program Analysis and LLM-based Agents
+DepRadar: Agentic Coordination for Context-Aware Defect Impact Analysis in Deep Learning Libraries
+Evaluating and Improving Automated Repository-Level Rust Issue Resolution with LLM-based Agents
+Repairing LLM Executions for Secure Automatic Programming
+Unlocking LLM Repair Capabilities Through Cross-Language Translation and Multi-Agent Refinement
+INTENTFIX: Automated Logic Vulnerability Repair via LLM-Driven Intent Modeling
+LLM-based Agents for Automated Bug Fixing: How Far Are We?
+Automating API Documentation from Crowdsourced Knowledge
+LLM-based API Argument Completion with Knowledge-Augmented Prompts
+UniCoR: Modality Collaboration for Robust Cross-Language Hybrid Code Retrieval
+Unified Software Engineering Agent as AI Software Engineer
+From Code to Correctness: Closing the Last Mile of Code Generation with Hierarchical Debugging
+NB2P: Generating Data Science Pipelines from Computational Notebooks
+FreshBrew: A Benchmark for Evaluating AI Agents on Java Code Migration
+More with Less: An Empirical Study of Turn-Control Strategies for Efficient Coding Agents
+RISE: Rule-Driven SQL Dialect Translation via Query Reduction
+SmartC2Rust: Iterative, Feedback-Driven C-to-Rust Translation via Large Language Models for Safety and Equivalence
+Locus: Agentic Predicate Synthesis for Directed Fuzzing
+Scaling Security Testing by Addressing the Reachability Gap
+When AI Takes the Wheel: Security Analysis of Framework-Constrained Program Generation
+Let the Trial Begin: A Mock-Court Approach to Vulnerability Detection using LLM-Based Agents
+Software Vulnerability Management in the Era of Artificial Intelligence: An Industry Perspective
+XRFix: Exploring Performance Bug Repair of Extended Reality Applications with Large Language Models
+Rethinking the Capability of Fine-Tuned Language Models for Automated Vulnerability Repair
+TraceCoder: A Trace-Driven Multi-Agent Framework for Automated Debugging of LLM-Generated Code
+Well Begun is Half Done: Location-Aware and Trace-Guided Iterative Automated Vulnerability Repair
+Input Reduction Enhanced LLM-based Program Repair
+A Causal Perspective on Measuring, Explaining and Mitigating Smells in LLM-Generated Code
+A Comparison of Conversational Models and Humans in Answering Technical Questions: the Firefox Case
+Reflections on the Reproducibility of Commercial LLM Performance in Empirical Software Engineering Studies
+On LLMs’ Internal Representation of Code Correctness
+Inside Out: Uncovering How Comment Internalization Steers LLMs for Better or Worse
+PredicateFix: Repairing Static Analysis Alerts with Bridging Predicates
+SpecGuru: Hierarchical LLM-Driven API Points-to Specification Generation with Self-Validation
+TAAF: A Trace Abstraction and Analysis Framework Synergizing Knowledge Graphs and LLMs
+FoundRoot: Towards Foundation Model for Root Cause Analysis via Structured Deep Thinking
+Improving Code Generation via Small Language Model-as-a-judge
+Heterogeneous Prompting and Execution Feedback for SWE Issue Test Generation and Selection
+Change And Cover: Last-Mile, Pull Request-Based Regression Test Augmentation
+Knowledge Matters: Injecting Project and Testing Knowledge into LLM-based Unit Test Generation
+TestWeaver: Execution-aware, Feedback-driven Regression Testing Generation with Large Language Models
+RBCTest: Leveraging LLMs to Mine and Verify Oracles of API Response Bodies for RESTful API Testing
+Automating Requirements Formalization: Using LLMs and Low-Complexity Distinguishing Traces for Semantic Validation
+ProofCoop: Collaborative Automated Formal Verification
+Multi-Location Software Model Completion
+3D Software Synthesis Driven by Constraint-Expressive Intermediate Representation
+Distance-Guided Search in Program Synthesis with Imperfect LLM Solutions
+SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution
+End-to-End Model Generation with Large Language Models for Adaptive IoT Application Deployment
+Agent-Based Ensemble Reasoning for Repository-Level Issue Resolution
+Atomizer: An LLM-based Collaborative Multi-Agent Framework for Intent-Driven Commit Untangling
+Environment-Aware Code Generation: How far are We?
+Evolving Trends, Patterns, and Hidden Pitfalls: Unveiling JavaScript Feature Usage in the Wild
+Breaking Strong Encapsulation: A Comprehensive Study of Java Module Abuse
+Fake Stars on GitHub: A Growing Spiral of Popularity Contests, Spams, and Malware
+An Empirical Study of WebAssembly Usage in Node.js
+The Cost vs the Benefit of Adding an Extra Code Reviewer to Mitigate Developer Turnover through Reviewer Recommenders
+IntelliRadar: A Comprehensive Platform to Pinpoint Malicious Packages from Cyber Intelligence
+A Large-Scale Empirical Study of Secret Key Leakage in Hugging Face Spaces
+Beyond Final Code: A Process-Oriented Error Analysis of Software Development Agents in Real-World GitHub Scenarios
+JEDI: Java Evaluation of Declarative and Imperative Queries: Benchmarking the Java Stream API
+Energy-Efficient Software Development: A Multi-dimensional Empirical Analysis of Stack Overflow
+Towards Understanding and Characterizing Vulnerabilities in Intelligent Connected Vehicles through Real-World Exploits
+Towards Supporting Open Source Library Maintainers with Community-Based Analytics
+Defects4REST: A Benchmark of Real-World Defects to Enable Controlled Testing and Debugging Studies for REST APIs
+Characterizing GPU-accelerated Web Applications in Browsers
+A Comprehensive Study of Concurrency Bugs in the Linux Kernel
+Toward Efficient Package Maintenance: An Empirical Study of Patch Sharing across Four Linux Distributions
+Causal or Correlational? A Cohort Study on the Effects of Code Smells on Class Change- and Fault-Proneness
+Architecture and Design FlowScope: Non-Intrusive Distributed Tracing with Method-Level Delay Estimation for Microservices Troubleshooting
+CCLInsight: Unveiling Insights in GPU Collective Communication Libraries via Primitive-Centric Analysis
+Semantic-Enhanced Automatic Refinement of Architecture Recovery Results Using LLMs
+Metronome: Differentiated Delay Scheduling for Serverless Functions
+SSAR: A Novel Software Architecture Recovery Approach Enhancing Accuracy and Scalability
+LogFold: Compressing Logs with Structured Tokens and Hybrid Encoding
+Do Unit Proofs Work? An Empirical Study of Compositional Bounded Model Checking for Memory Safety Verification
+Accurate Inference of Termination Conditions
+One Size Does Fit All: Kernel-Assisted Fine-Grained Debloating and Layout Randomization for Shared Libraries
+Project-Level Resource Leak Detection through Agent-based Ownership Analysis and Repair Pattern Verification
+Verification of Multi-Model Stochastic Systems
+Fast Flow-Sensitive C Program Partitioning via Iterative Value-Flow Refinement
+Accelerating IC3 Verification by Exploiting Unsatisfiable Cores and Satisfying Models
+Towards Global Matches for Third-Party Library Detection in Android
+Closing the Chain: How to Reduce your Risk of being SolarWinds, Log4j, or XZ Utils
+An Empirical Study on the Robustness of Android Third-Party Library Detection Tools Against Advanced Obfuscation
+Insecure Ingredients? Exploring Dependency Update Patterns of Bundled JavaScript Packages on the Web
+AnchorDiff: Binary OSS Version Identification Method Based on Anchor Node Slicing
+Securing the AI Supply Chain: What Can We Learn From Developer-Reported Security Issues and Solutions of AI Projects?
+Beyond Fuzzy Matching: Constraint-Guided Patch Presence Testing for Obfuscated Java Binaries
+Rusted Types: Static Detection of Rust Type Confusion Bugs
+Bytecode-centric Detection of Known-to-be-vulnerable Dependencies in Java Projects
+CoBrA: Context-, Branch-sensitive Static Analysis for Detecting Taint-style Vulnerabilities in PHP Web Applications
+One Signature, Multiple Payments: Demystifying and Detecting Signature Replay Vulnerabilities in Smart Contracts
+TaintP2X: Detecting Taint-Style Prompt-to-Anything Injection Vulnerabilities in LLM-Integrated Applications
+ConfuGuard: Using Metadata to Detect Active and Stealthy Package Confusion Attacks Accurately and at Scale
+Enforcing Control Flow Integrity on DeFi Smart Contracts
+GenDetect: Generalizing Reactive Detection for Resilience Against Imitative DeFi Attack Cascade
+LLM-based Vulnerability Discovery through the Lens of Code Metrics
+Exploring and Improving Real-World Vulnerability Data Generation via Prompting Large Language Models
+RulePilot: An LLM-Powered Agent for Security Rule Generation
+BTreeFuzz: Enhanced Feedback Mechanism for ROS Program Fuzzer Based on Behavior Tree
+OctopusGuard: K-Line Enhanced Token Scam Detector Powered by Multimodal LLMs
+Attention Distance: A Novel Metric for Directed Fuzzing with Large Language Models
+Out of Distribution, Out of Luck: How Well Can LLMs Trained on Vulnerability Datasets Detect Top 25 CWE Weaknesses?
+Learning from Software Failures: A Case Study at a National Space Research Center
+WhisperCatcher: Demystifying Unauthorized and Encrypted Private Data Transmission in Android Applications
+Understanding DevOps Security of Google Workspace Apps
+LLM4JMH: Studying the Use of LLMs for Generating Java Performance Microbenchmarks
+Back to the Basics: Rethinking Issue-Commit Linking with LLM-Assisted Retrieval
+Decades of GNU Patch and Git Cherry-Pick: Can We Do Better?
+SeRe: A Security-Related Code Review Dataset Aligned with Real-World Review Activities
+Actionable Warning Is Not Enough: Recommending Valid Actionable Warnings with Weak Supervision
+MINES: Explainable Anomaly Detection through Web API Invariant Inference
+Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities
+Minimizing Breaking Changes and Redundancy in Mitigating Technical Lag for Java Projects
+Remediating Superfluous Re-Rendering in React Applications
+HistoryFinder: Advancing Method-Level Source Code History Generation with Accurate Oracles and Enhanced Algorithm
+Using a Sledgehammer to Crack a Nut? Revisiting Automated Compiler Fault Isolation
+CodeMapper: A Language-Agnostic Approach to Mapping Code Regions Across Commits
+The State of Open Science in Software Engineering Research: A Case Study of ICSE Artifacts
+CRUDinfer: Automated CRUD Semantics Inference for REST APIs Through Black-box Testing
+An Empirical Study of Fine-Grained Entity Relationships for Tracing Natural Language and Code Vulnerability Artifacts
+Designing Abandabot: When Does Open Source Dependency Abandonment Matter?
+How Does Core Contributor Disengagement Impact Open Source Project Activity? A Quasi-Experiment
+Small Changes, Big Trouble: Demystifying and Parsing License Variants for Incompatibility Detection in the PyPI Ecosystem
+Beyond Adoption: Examining the Evolution and Impact of Code of Conduct on Open Source Communities
+An empirical Analysis of Community and Coding Patterns in OSS4SG vs. Conventional OSS
+Toxicity Ahead: Forecasting Conversational Derailment on GitHub
+“Write in English, Nobody Understands Your Language Here”: A Study of Non-English Trends in Open-Source Repositories
+Views on Internal and External Validity in Empirical Software Engineering: 10 Years Later and Beyond
+Cognitive Biases in LLM-Assisted Software Development
+: A Questionnaire Instrument for Measuring Professionals’ Attitudes Toward Technical and Sociotechnical Infrastructure
+WhyFlow: Interrogative Debugger for Sensemaking Taint Analysis
+Sapling: Quantifying and Measuring the Maturity of the RISC-V Software Ecosystem
+Breaking the Alphabet: Rethinking File Ordering in Code Review
+“Making Our Life Less Monotonous” or “Just Tick Things Off”: An Exploratory Multi-Method Study of Toil
+Staying or Leaving? How Job Satisfaction, Embeddedness and Antecedents Predict Turnover Intentions of Software Professionals
+Connected to Stay: Gender Homophily and Its Role in Open-Source Software Developer Retention
+Perspective-Taking in Software Engineering: A Study on its Relationship to Team Performance
+STEM-EF: A Scrum Teamwork Effectiveness Model Based on Emotional Factors
+Women’s Career Paths in the Nordic Software Industry: A Narrative Analysis Through Gender-Switched Personas
+“Maybe We Need Some More Examples:” Individual and Team Drivers of Developer GenAI Tool Use
+“Game Changer” or “Overenthusiastic Drunk Acquaintance”? Generative AI Use by Blind and Low Vision Software Professionals in the Workplace
+Are Humans and LLMs Confused by the Same Code? An Empirical Study on Fixation-Related Potentials and LLM Perplexity
+Weak Programmers Need Not Apply, LLMs Welcome! Survey Screening in the AI Era
+Evolving with AI: A Longitudinal Analysis of Developer Logs
+“I need to learn better searching tactics for privacy policy laws.” Investigating Software Developers’ Behavior When Using Sources on Privacy Issues
+What’s in a Software Engineering Job Posting?
+TaCoS: Generated Context Summaries for Task Resumption
+Demystifying the CVE Ecosystem: Community-Perceived Impacts and Problems
+Practitioner Views on Mobile App Accessibility: Practices and Challenges
+Requirements and Modeling Synthesizing Hardware-Specific Instructions for Efficient Code Generation of Simulink
+Light over Heavy: Automated Performance Requirements Quantification with Linguistic Inducement
+Unlocking the Silent Needs: Business-Logic-Driven Iterative Requirements Auto-completion
+Bayesian Multi-Level Performance Models for Multi-Factor Variability of Configurable Software Systems
+Can SAT Solvers Keep Up With the Linux Kernel’s Feature Model?
+LikeThis! Empowering App Users to Submit UI Improvement Suggestions Instead of Complaints
+Modeling Like Peeling an Onion: Layerwise Analysis-Driven Automatic Behavioral Model Generation
+A Comprehensive Study of Deep Learning Model Fixing Approaches
+AtPatch: Debugging Transformers via Hot-Fixing Over-Attention
+Attention Pruning: Automated Fairness Repair of Language Models via Surrogate Simulated Annealing
+DNN Modularization via Activation-Driven Training
+TypeCare: Boosting Python Type Inference Models via Context-Aware Re-Ranking and Augmentation
+A Semantic-based Optimization Approach for Repairing LLMs: Case Study on Code Generation
+FM4MC: Improving Feature Models for Microservice Chains—Towards More Efficient Configuration and Validation
+The Hidden Cost of Readability: How Code Formatting Silently Consumes Your LLM Budget
+ModularEvo: Evolving Multi-Task Models via Neural Network Modularization and Composition
+A First Look at Model Supply Chain: From the Risk Perspective
+PreServe: Intelligent Management for LMaaS Systems via Hierarchical Prediction
+AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents
+Aligning Requirement for Large Language Model’s Code Generation
+Evaluating the Effectiveness of LLM-based Interoperability
+Checking Unsupervised Learning for Nondeterminism and Inconsistency via SMT Solving
+Imitation Game: Reproducing Deep Learning Bugs Leveraging an Intelligent Agent
+Beyond Correctness: Exposing LLM-generated Logical Flaws in Reasoning via Multi-step Automated Theorem Proving
+Comfrey: Mitigating Integration Failures in LLM-enabled Software at Run-Time
+MazeBreaker: Multi-Agent Reinforcement Learning for Dynamic Jailbreaking of LLM Security Defenses
+Smoke and Mirrors: Jailbreaking LLM-based Code Generation via Implicit Malicious Prompts
+Why Attention Fails: A Taxonomy of Faults in Attention-Based Neural Networks
+Revisiting “Revisiting Neuron Coverage for DNN Testing: A Layer-Wise and Distribution-Aware Criterion”: A Critical Review and Implications on DNN Coverage Testing
+Training on Clean Data but Getting Backdoored Models! A Poisoning Attack on Code Encoders
+SpecOps: A Fully Automated AI Agent Testing Framework in Real-World GUI Environments
+SustainDiffusion: Optimising the Social and Environmental Sustainability of Stable Diffusion Models
+Toward Systematic Counterfactual Fairness Evaluation of Large Language Models: The CAFFE Framework
+TACO: Trust Assessment of Large Language Models in Coding Assistance Tasks
+Fairness Is Not Just Ethical: Performance Trade-Off via Data Correlation Tuning to Mitigate Bias in ML Software
+VADA: A Multicultural Benchmark for Value-Aware Data Generation and Alignment Evaluation in LLMs
+Testora: Using Natural Language Intent to Detect Behavioral Regressions
+CoReX: Context-Aware Refinement-Based Slicing for Debugging Regression Failures
+Test Flimsiness: Characterizing Flakiness Induced by Mutation to the Code Under Test
+E-Test: E’er-Improving Test Suites
+Repair Ingredients Are All You Need: Improving Large Language Model-Based Program Repair via Repair Ingredients Search
+Breaking Single-Tester Limits: Multi-Agent LLMs for Multi-User Feature Testing
+EchoFuzz: Empowering Smart Contract Fuzzing with Large Language Models
+MioHint: LLM-Assisted Request Mutation for Whitebox REST API Testing
+Think Outside the Box: Automating Inter-App Functionality Testing via Memory Implanting and Reasoning
+Predicting Failures in Smart Human-Centric Ecosystems
+Scalpel: Automotive Deep Learning Framework Testing via Assembling Model Components
+DeFT: Maintaining Determinism and Extracting Unit Tests for Autonomous Driving Planning
+Temporal Specification Oriented Fuzzing for Trigger-Action-Programming Smart Home Integrations
+Fuzzing JavaScript Engines by Fusing JavaScript and WebAssembly
+RusyFuzz: Unhandled Exception Guided Fuzzing for Rust OS Kernel
+VDBFuzz: Understanding and Detecting Crash Bugs in Vector Database Management Systems
+Variability-Aware Fuzzing
+CombCT: Compiler Testing via Combinatorial Testing
+Fuzzing Java Optimizing Compilers with Complex Inter-Class Structures Guided by Heterogeneous Program Graphs
+Bounded Exhaustive Random Program Generation for Testing Solidity Compilers
+Is Call Graph Pruning Really Effective? An Empirical Re-evaluation
+PyXray: Practical Cross-Language Call Graph Construction through Object Layout Analysis
+D-BUNDLR: Destructing JavaScript Bundles for Effective Static Analysis
+Precise Static Identification of Ethereum Storage Variables
+Debugging Performance Issues in WebAssembly Runtimes via Mutation-based Inference
+Dependency-aware Residual Risk Analysis
+Efficient Build Dependency Verification Using eBPF and Incremental Analysis
+Fine-Grained Analyses for Evolution-Aware Runtime Verification
+Generator Solving for Symbolic Execution
+GPTrace: Effective Crash Deduplication Using LLM Embeddings
+BFix: Automated Safe Memory-Leak Fixing for Binary Code
+Enhancing Symbolic Execution with Self-Configuring Parameters
+MutDafny: A Mutation-Based Approach to Assess Dafny Specifications
+Testing Deep Learning Libraries via Neurosymbolic Constraint Learning
+On Interaction Effects in Greybox Fuzzing
+How Good are Input Grammar Miners? An Empirical Study
+LoopSCC: Summarizing Complex Multi-branch Nested Loops via Periodic Oscillation Interval
+On the Robustness of Fairness Practices: A Causal Framework for Systematic Evaluation
+Context-Free Property Oriented Fuzzing
+Is My RPC Response Reliable? Detecting RPC Bugs in Blockchain Client under Context
+Tools for Python
+PTV: Scalable Version Detection of Web Libraries and its Security Application
+Hallucinating Certificates: Differential Testing of TLS Certificate Validation Using Generative Language Models
+Same Same But Different: Preventing Refactoring Attacks on Software Plagiarism Detection
+Boosting Gas Revenues of Ethereum Miners
+Context-Free Grammar Inference for Complex Programming Languages in Black Box Settings
+No Shot in the Dark: Efficient Context-Free Language Reachability via Context-Aware Tabulation
+SymRadar: PoC-Centered Bounded Verification for Vulnerability Repair
+Efficient Strong Updates For Path Sensitive Data Dependence Analysis
+Optimization-Aware Test Generation for Deep Learning Compilers
+Validating Mixed-Integer Programming Solvers
+NotDec: WebAssembly Decompilation With Inter-Procedural Type Recovery
+AssertFlip: Reproducing Bugs via Inversion of LLM-Generated Passing Tests
+Characterizing Regression BugInducing Changes and Improving LLMBased Regression Bug Detection
+Online and Interactive Bayesian Inference Debugging
+Hybrid Fault-Driven Mutation Testing for Python
+Learning without Forgetting: Towards Continual Learning of Fault Localization Models in Industrial Software Systems
+Automated Network-Level Fault Injection Testing of Microservice Architectures
+Misbehavior Forecasting for Focused Autonomous Driving Systems Testing
+TARIPlay: A Test Framework for AR Applications based on Interactive Area Detection in Playback Videos
+META2V2V: Revealing Behavioural Deviations under Mutual Perception in Multi-Vehicle Autonomous Driving
+Uncovering Failures in Cyber-Physical System State Transitions: A Fuzzing-Based Approach Applied to sUAS
+Configuration-Sensitive Linux Kernel Fuzzing
+StorFuzz: Using Data Diversity to Overcome Fuzzing Plateaus
+Parse this! Summoning Context-Sensitive Inputs with Goblin
+Metamorphic Fuzzing for Multi-Agent Path Finding Algorithms
+FrameShift: Resizing Fuzzer Inputs Without Breaking Them
+DyMA-Fuzz: Dynamic Direct Memory Access Abstraction for Re-hosted Monolithic Firmware Fuzzing
+LSPRAG: LSP-Guided RAG for Language-Agnostic Real-Time Unit Test Generation
+SAFE: Harnessing LLM for Scenario-Driven ADS Testing from Multimodal Crash Data
+Memory-Efficient Large Language Models for Program Repair with Semantic-Guided Patch Generation
+LLM4Perf: Large Language Models Are Effective Samplers for Multi-Objective Performance Modeling
+TestifAI: Tomography-Based Testing for Deep Learning Systems
+Author Index

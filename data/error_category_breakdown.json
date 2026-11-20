@@ -1,0 +1,47 @@
+{
+  "qwen/qwen3-vl-8b-instruct": {
+    "numeric_magnitude": 3,
+    "trend_direction": 16,
+    "ranking_comparison": 8,
+    "miscount": 9,
+    "misidentification": 29,
+    "fabricated_detail": 3,
+    "other": 2
+  },
+  "meta-llama/llama-4-scout": {
+    "numeric_magnitude": 6,
+    "trend_direction": 11,
+    "ranking_comparison": 2,
+    "miscount": 6,
+    "misidentification": 23,
+    "fabricated_detail": 4,
+    "other": 0
+  },
+  "google/gemma-3-27b-it": {
+    "numeric_magnitude": 5,
+    "trend_direction": 14,
+    "ranking_comparison": 4,
+    "miscount": 5,
+    "misidentification": 47,
+    "fabricated_detail": 9,
+    "other": 0
+  },
+  "mistralai/mistral-small-3.2-24b-instruct": {
+    "numeric_magnitude": 1,
+    "trend_direction": 18,
+    "ranking_comparison": 2,
+    "miscount": 7,
+    "misidentification": 26,
+    "fabricated_detail": 8,
+    "other": 0
+  },
+  "openai/gpt-4o": {
+    "numeric_magnitude": 3,
+    "trend_direction": 10,
+    "ranking_comparison": 5,
+    "miscount": 5,
+    "misidentification": 29,
+    "fabricated_detail": 4,
+    "other": 3
+  }
+}
